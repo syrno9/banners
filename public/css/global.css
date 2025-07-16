@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    background-color: #091113;
+    color: #dfdfdf;
+}
+
+a {
+    color: #fffab2;
+    text-decoration: none;
+    pointer-events: all;
+}
+  
+a:hover {
+    color: #d00;
+}
+  
+p {
+    margin: 0;
+}
+
+.container {
+    max-width: 770px;
+    margin: 0 auto;
+}
+
+h3 {
+    margin-bottom: 10px;
+    background-color: #182f3f;
+}
+
+.upload-form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 4px;
+}
+
+label {
+    color: #dfdfdf;
+    font-size: 13px;
+    width: 67px;
+    display: inline-block;
+    text-align: center;
+    background: #182f3f9e;
+    padding: 3px;
+    border: 1px solid #82cece;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="password"],
+input[type="file"] {
+    background: #091113;
+    border: 1px outset #82cece;
+    color: #dfdfdf;
+    margin: 0;
+}
+
+button {
+    border: #182f3f;
+    background: linear-gradient(to bottom, #244860 7%, #232833 100%);
+    color: #bcc2d2;
+    border: 1px solid #244860;
+    cursor: pointer;
+    padding: 4px 15px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+button:hover {
+    color: white;
+    background: linear-gradient(to bottom, gray 7%, #244860 100%);
+    border: 1px solid transparent;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+.error {
+    color: #fff;
+    background: linear-gradient(0deg, #592525a6, #ae2727a9);
+    padding: 0 10px;
+    margin-bottom: 15px;
+}
+
+.success {
+    color: #fff;
+    background: linear-gradient(0deg, #25593ba6, #27ae5fa9);
+    padding: 0 10px;
+    margin-bottom: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th {
+    background-color: #182f3f;
+    color: #dfdfdf;
+    text-align: left;
+    padding: 8px;
+}
+
+td {
+    padding: 8px;
+    vertical-align: middle;
+}
+
+.banner {
+    display: table;
+    width: 468px;
+    max-height: 60px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.banner-row:nth-child(odd) {
+    background: #0d171b;
+  }
+  
+.banner-row:nth-child(even) {
+    background: #142530;
+}
+
+.banner-row:hover {
+    background-color: #223f53;
+}
+
+.banner-row img {
+    max-width: 468px;
+    height: auto;
+    display: block;
+}
+
+.delete-cell {
+    position: relative;
+    width: 4%;
+    text-align: center;
+}
+
+.delete-toggle {
+    display: none;
+}
+
+.delete-label {
+    display: inline-block;
+    background: linear-gradient(to bottom, #2a3f4f 0%, #213642 48%, #172634 53%, #121f29 100%);
+    border: 1px solid #4c7f7f;
+    text-align: center;
+    cursor: pointer;
+    padding: 1px 1px;
+    border-radius: 3px;
+    width: fit-content;
+}
+
+.delete-form-container {
+    display: none;
+    position: absolute;
+    top: 75%;
+    left: 0;
+    background-color: #0d171b;
+    padding: 5px;
+    z-index: 10;
+    min-width: 200px;
+}
+
+.delete-toggle:checked ~ .delete-form-container {
+    display: block;
+}
+
+.delete-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.delete-form input[type="password"] {
+    width: 100%;
+    margin-bottom: 5px;
+}
